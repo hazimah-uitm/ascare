@@ -34,6 +34,20 @@
         </a>
     </li>
 
+    <li class="{{ Request::is('user*') && !Request::is('user-role*') ? 'mm-active' : '' }}">
+        <a href="{{ route('user') }}">
+            <div class="parent-icon"><i class='bx bx-user-circle'></i></div>
+            <div class="menu-title">Pelajar</div>
+        </a>
+    </li>
+
+    <li class="{{ Request::is('user*') && !Request::is('user-role*') ? 'mm-active' : '' }}">
+        <a href="{{ route('user') }}">
+            <div class="parent-icon"><i class='bx bx-user-circle'></i></div>
+            <div class="menu-title">Peniaga</div>
+        </a>
+    </li>
+
     <li class="{{ Request::is('user-role*') ? 'mm-active' : '' }}">
         <a href="{{ route('user-role') }}">
             <div class="parent-icon"><i class='bx bx-shield'></i></div>
