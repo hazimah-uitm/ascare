@@ -55,8 +55,6 @@
         </a>
     </li>
 
-
-
     <li class="menu-label">Tetapan</li>
 
     <li class="{{ Request::is('campus*') ? 'mm-active' : '' }}">
