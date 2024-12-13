@@ -67,6 +67,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/user/{id}/restore', 'UserController@restore')->name('user.restore');
     Route::delete('/user/{id}/force-delete', 'UserController@forceDelete')->name('user.forceDelete');
 
+    // Student Management
+    Route::get('student', function () { return view('pages.student.index');})->name('student');
+    Route::get('student/create', function () { return view('pages.student.create');})->name('student.create');
+    Route::get('student/edit', function () { return view('pages.student.edit');})->name('student.edit');
+    Route::get('student/show', function () { return view('pages.student.show');})->name('student.show');
+    Route::get('student/trash', function () { return view('pages.student.trash');})->name('student.trash');
+
     // User Role Management
     Route::get('user-role', 'UserRoleController@index')->name('user-role');
     Route::get('user-role/create', 'UserRoleController@create')->name('user-role.create');
