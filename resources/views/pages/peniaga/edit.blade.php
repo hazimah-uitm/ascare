@@ -3,20 +3,20 @@
 @section('content')
 <!-- Breadcrumb -->
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Pelajar</div>
+    <div class="breadcrumb-title pe-3">Pengurusan Peniaga</div>
     <div class="ps-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
-                <li class="breadcrumb-item"><a href="{{ route('student') }}">Senarai Pelajar</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Kemaskini Pelajar</li>
+                <li class="breadcrumb-item"><a href="{{ route('peniaga') }}">Senarai Peniaga</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kemaskini Peniaga</li>
             </ol>
         </nav>
     </div>
 </div>
 <!-- End Breadcrumb -->
 
-<h6 class="mb-0 text-uppercase">Kemaskini Pelajar</h6>
+<h6 class="mb-0 text-uppercase">Kemaskini Peniaga</h6>
 <hr />
 
 <div class="card">
@@ -24,31 +24,28 @@
         <form method="POST" action="#">
 
             <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" name="name" value="John Doe">
+                <label for="name" class="form-label">Nama Syarikat</label>
+                <input type="text" class="form-control" id="name" name="name" value="Unihaus">
             </div>
 
             <div class="mb-3">
-                <label for="staff_id" class="form-label">No. Pelajar</label>
-                <input type="number" class="form-control" id="staff_id" name="staff_id" value="2024111111">
+                <label for="name" class="form-label">Nama Pemilik</label>
+                <input type="text" class="form-control" id="name" name="name" value="Ernie Zakri">
+            </div>
+
+            <div class="mb-3">
+                <label for="staff_id" class="form-label">No. Peniaga</label>
+                <input type="number" class="form-control" id="staff_id" name="staff_id" value="333333">
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Alamat Emel</label>
-                <input type="email" class="form-control" id="email" name="email" value="2024111111@uitm.edu.my">
+                <input type="email" class="form-control" id="email" name="email" value="ernie@gmail.com">
             </div>
 
             <div class="mb-3">
                 <label for="office_phone_no" class="form-label">No. Telefon</label>
-                <input type="number" class="form-control" id="office_phone_no" name="office_phone_no" value="0123456789">
-            </div>
-
-            <div class="mb-3">
-                <label for="position_id" class="form-label">Fakulti</label>
-                <select class="form-select" id="position_id" name="position_id">
-                    <option value="1" selected>FSKTM</option>
-                    <option value="2">FEB</option>
-                </select>
+                <input type="number" class="form-control" id="office_phone_no" name="office_phone_no" value="0121111111">
             </div>
 
             <div class="mb-3">
@@ -73,7 +70,7 @@
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="roles[]" id="admin" value="admin" checked>
-                        <label class="form-check-label" for="admin">Pelajar</label>
+                        <label class="form-check-label" for="admin">peniaga</label>
                     </div>
                 </div>
             </div>
@@ -90,7 +87,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('student') }}" class="btn btn-primary">Kemaskini</a>
+            <a href="{{ route('peniaga') }}" class="btn btn-primary">Kemaskini</a>
 
         </form>
     </div>

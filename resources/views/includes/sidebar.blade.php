@@ -41,10 +41,10 @@
         </a>
     </li>
 
-    <li class="{{ Request::is('user*') && !Request::is('user-role*') ? 'mm-active' : '' }}">
-        <a href="{{ route('user') }}">
+    <li class="{{ Request::is('peniaga*') ? 'mm-active' : '' }}">
+        <a href="{{ route('peniaga') }}">
             <div class="parent-icon"><i class='bx bx-store'></i></div>
-            <div class="menu-title">Vendor</div>
+            <div class="menu-title">Peniaga</div>
         </a>
     </li>
 

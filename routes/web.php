@@ -29,6 +29,20 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 
 Route::middleware('auth')->group(function () {
+    
+    // Student Management
+    Route::get('student', function () { return view('pages.student.index');})->name('student');
+    Route::get('student/create', function () { return view('pages.student.create');})->name('student.create');
+    Route::get('student/edit', function () { return view('pages.student.edit');})->name('student.edit');
+    Route::get('student/show', function () { return view('pages.student.show');})->name('student.show');
+    Route::get('student/trash', function () { return view('pages.student.trash');})->name('student.trash');
+
+    // Vendor Management
+    Route::get('peniaga', function () { return view('pages.peniaga.index');})->name('peniaga');
+    Route::get('peniaga/create', function () { return view('pages.peniaga.create');})->name('peniaga.create');
+    Route::get('peniaga/edit', function () { return view('pages.peniaga.edit');})->name('peniaga.edit');
+    Route::get('peniaga/show', function () { return view('pages.peniaga.show');})->name('peniaga.show');
+    Route::get('peniaga/trash', function () { return view('pages.peniaga.trash');})->name('peniaga.trash');
 
     //Campus
     Route::get('campus', 'CampusController@index')->name('campus');
@@ -67,12 +81,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/user/{id}/restore', 'UserController@restore')->name('user.restore');
     Route::delete('/user/{id}/force-delete', 'UserController@forceDelete')->name('user.forceDelete');
 
-    // Student Management
-    Route::get('student', function () { return view('pages.student.index');})->name('student');
-    Route::get('student/create', function () { return view('pages.student.create');})->name('student.create');
-    Route::get('student/edit', function () { return view('pages.student.edit');})->name('student.edit');
-    Route::get('student/show', function () { return view('pages.student.show');})->name('student.show');
-    Route::get('student/trash', function () { return view('pages.student.trash');})->name('student.trash');
 
     // User Role Management
     Route::get('user-role', 'UserRoleController@index')->name('user-role');
