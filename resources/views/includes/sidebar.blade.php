@@ -36,15 +36,15 @@
 
     <li class="{{ Request::is('student*') ? 'mm-active' : '' }}">
         <a href="{{ route('student') }}">
-            <div class="parent-icon"><i class='bx bx-user-circle'></i></div>
+            <div class="parent-icon"><i class='bx bx-id-card'></i></div>
             <div class="menu-title">Pelajar</div>
         </a>
     </li>
 
     <li class="{{ Request::is('user*') && !Request::is('user-role*') ? 'mm-active' : '' }}">
         <a href="{{ route('user') }}">
-            <div class="parent-icon"><i class='bx bx-user-circle'></i></div>
-            <div class="menu-title">Peniaga</div>
+            <div class="parent-icon"><i class='bx bx-store'></i></div>
+            <div class="menu-title">Vendor</div>
         </a>
     </li>
 

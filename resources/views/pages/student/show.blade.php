@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <th>ID Pelajar</th>
-                        <td>20221231896</td>
+                        <td>2024111111</td>
                     </tr>
                     <tr>
                         <th>Fakulti</th>
@@ -44,15 +44,15 @@
                     </tr>
                     <tr>
                         <th>Alamat Emel</th>
-                        <td>2022212345@uitm.edu.my</td>
+                        <td>2024111111@uitm.edu.my</td>
                     </tr>
                     <tr>
                         <th>No. Telefon</th>
-                        <td>01111111111</td>
+                        <td>0123456789</td>
                     </tr>
                     <tr>
                         <th>Kampus</th>
-                        <td>Samarahan</td>
+                        <td>Samarahan 2</td>
                     </tr>
                     <tr>
                         <th>Peranan</th>

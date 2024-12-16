@@ -63,9 +63,33 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Ali Bin Aby</td>
-                        <td>2022125869</td>
-                        <td>Samarahan</td>
+                        <td>John Doe</td>
+                        <td>2024111111</td>
+                        <td>Samarahan 2</td>
+                        <td>Semester 2/2024</td>
+                        <td>Aktif</td>
+                        <td>
+                            <a href="{{ route('student.edit') }}" class="btn btn-info btn-sm"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kemaskini">
+                                <i class="bx bxs-edit"></i>
+                            </a>
+                            <a href="{{ route('student.show')}}" class="btn btn-primary btn-sm"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Papar">
+                                <i class="bx bx-show"></i>
+                            </a>
+                            <a type="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Padam">
+                                <span class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"><i
+                                        class="bx bx-trash"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Harizah</td>
+                        <td>2024222222</td>
+                        <td>Samarahan 2</td>
                         <td>Semester 2/2024</td>
                         <td>Aktif</td>
                         <td>

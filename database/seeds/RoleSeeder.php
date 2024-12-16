@@ -29,7 +29,7 @@ class RoleSeeder extends Seeder
                 'guard_name' => 'web',
             ],
             [
-                'name' => 'Peniaga',
+                'name' => 'Vendor',
                 'publish_status' => true,
                 'guard_name' => 'web',
             ],

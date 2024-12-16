@@ -25,17 +25,17 @@
 
             <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" name="name" value="Ali Bin Ahmad">
+                <input type="text" class="form-control" id="name" name="name" value="John Doe">
             </div>
 
             <div class="mb-3">
-                <label for="staff_id" class="form-label">No. Pekerja</label>
-                <input type="number" class="form-control" id="staff_id" name="staff_id" value="12345">
+                <label for="staff_id" class="form-label">No. Pelajar</label>
+                <input type="number" class="form-control" id="staff_id" name="staff_id" value="2024111111">
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Alamat Emel</label>
-                <input type="email" class="form-control" id="email" name="email" value="ali.ahmad@example.com">
+                <input type="email" class="form-control" id="email" name="email" value="2024111111@uitm.edu.my">
             </div>
 
             <div class="mb-3">
@@ -54,8 +54,8 @@
             <div class="mb-3">
                 <label for="campus_id" class="form-label">Kampus</label>
                 <select class="form-select" id="campus_id" name="campus_id">
-                    <option value="1" selected>Samarahan</option>
-                    <option value="2">Samarahan 2</option>
+                    <option value="1" selected>Samarahan 2</option>
+                    <option value="2">Samarahan</option>
                     <option value="3">Mukah</option>
                 </select>
             </div>
