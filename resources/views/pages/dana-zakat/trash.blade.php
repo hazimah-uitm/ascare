@@ -21,28 +21,45 @@
 <div class="card">
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table">
+        <table class="table">
                 <thead>
                     <tr>
-                        <th>Nama</th>
-                        <th>No. Pekerja</th>
-                        <th>Alamat Emel</th>
-                        <th>Jawatan</th>
-                        <th>Kampus</th>
-                        <th>Peranan</th>
+                        <th>#</th>
+                        <th>Sumber</th>
+                        <th>Jumlah Dana</th>
+                        <th>Tarikh Dana Diterima</th>
+                        <th>Status</th>
                         <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Ali Bin Aby</td>
-                        <td>2022125869</td>
-                        <td>Samarahan</td>
-                        <td>Semester 2/2024</td>
+                        <td>Yayasan Kasih</td>
+                        <td>RM 15,000</td>
+                        <td>01-03-2024</td>
                         <td>Aktif</td>
                         <td>
-                            <a href="{{ route('peniaga') }}" class="btn btn-success btn-sm"
+                            <a href="{{ route('dana-zakat') }}" class="btn btn-success btn-sm"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kembalikan">
+                                <i class="bx bx-undo"></i>
+                            </a>
+                            <a type="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Padam">
+                                <span class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"><i
+                                        class="bx bx-trash"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tabung Amanah</td>
+                        <td>RM 10,000</td>
+                        <td>15-04-2024</td>
+                        <td>Aktif</td>
+                        <td>
+                            <a href="{{ route('dana-zakat') }}" class="btn btn-success btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kembalikan">
                                 <i class="bx bx-undo"></i>
                             </a>
@@ -94,7 +111,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Adakah anda pasti ingin memadam rekod Ali Bin Ahmad?
+                Adakah anda pasti ingin memadam rekod Yayasan Kasih?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>

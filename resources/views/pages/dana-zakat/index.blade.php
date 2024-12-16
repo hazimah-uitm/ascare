@@ -62,7 +62,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Yayasan Zakat</td>
+                        <td>Yayasan Sarawak</td>
                         <td>RM 10,000</td>
                         <td>01-01-2024</td>
                         <td>Aktif</td>
@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Tabung Zakat Sarawak</td>
+                        <td>Tabung Baitulmal Sarawak</td>
                         <td>RM 5,000</td>
                         <td>15-02-2024</td>
                         <td>Aktif</td>
