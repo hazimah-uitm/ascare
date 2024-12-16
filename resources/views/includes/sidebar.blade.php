@@ -55,6 +55,21 @@
         </a>
     </li>
 
+    <li class="menu-label">Pengurusan Zakat</li>
+    <li class="{{ Request::is('dana-zakat*') ? 'mm-active' : '' }}">
+        <a href="{{ route('dana-zakat') }}">
+            <div class="parent-icon"><i class='bx bx-donate-heart'></i></div>
+            <div class="menu-title">Dana Zakat</div>
+        </a>
+    </li>
+
+    <li class="{{ Request::is('transaction*') ? 'mm-active' : '' }}">
+        <a href="{{ route('transaction') }}">
+            <div class="parent-icon"><i class='bx bx-wallet' ></i></div>
+            <div class="menu-title">Transaksi</div>
+        </a>
+    </li>
+
     <li class="menu-label">Tetapan</li>
 
     <li class="{{ Request::is('campus*') ? 'mm-active' : '' }}">

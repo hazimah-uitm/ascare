@@ -44,6 +44,20 @@ Route::middleware('auth')->group(function () {
     Route::get('peniaga/show', function () { return view('pages.peniaga.show');})->name('peniaga.show');
     Route::get('peniaga/trash', function () { return view('pages.peniaga.trash');})->name('peniaga.trash');
 
+    // Zakat Management
+    Route::get('dana-zakat', function () { return view('pages.dana-zakat.index');})->name('dana-zakat');
+    Route::get('dana-zakat/create', function () { return view('pages.dana-zakat.create');})->name('dana-zakat.create');
+    Route::get('dana-zakat/edit', function () { return view('pages.dana-zakat.edit');})->name('dana-zakat.edit');
+    Route::get('dana-zakat/show', function () { return view('pages.dana-zakat.show');})->name('dana-zakat.show');
+    Route::get('dana-zakat/trash', function () { return view('pages.dana-zakat.trash');})->name('dana-zakat.trash');
+
+    // Transaction Management
+    Route::get('transaction', function () { return view('pages.transaction.index');})->name('transaction');
+    Route::get('transaction/create', function () { return view('pages.transaction.create');})->name('transaction.create');
+    Route::get('transaction/edit', function () { return view('pages.transaction.edit');})->name('transaction.edit');
+    Route::get('transaction/show', function () { return view('pages.transaction.show');})->name('transaction.show');
+    Route::get('transaction/trash', function () { return view('pages.transaction.trash');})->name('transaction.trash');
+
     //Campus
     Route::get('campus', 'CampusController@index')->name('campus');
     Route::get('campus/view/{id}', 'CampusController@show')->name('campus.show');
