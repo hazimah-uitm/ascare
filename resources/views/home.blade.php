@@ -167,12 +167,11 @@
         <div class="col-md-6 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-success text-uppercase">Kupon Zakat Saya</h5>
+                    <h5 class="card-title text-uppercase">Kupon Zakat</h5>
                     <hr />
                     <p class="card-text"><strong>Jumlah Kupon Diterima:</strong> 5 Kupon</p>
                     <p class="card-text"><strong>Jumlah Nilai Kupon:</strong> RM 50.00</p>
                     <p class="card-text"><strong>Tarikh Terakhir Agihan:</strong> 15-06-2024</p>
-                    <a href="{{ route('transaksi') }}" class="btn btn-success btn-sm">Papar Kupon Saya</a>
                 </div>
             </div>
         </div>
@@ -180,7 +179,7 @@
         <div class="col-md-6 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-warning text-uppercase">Status Penggunaan</h5>
+                    <h5 class="card-title text-uppercase">Status Penggunaan</h5>
                     <hr />
                     <p class="card-text"><strong>Kupon Telah Digunakan:</strong> 3 Kupon</p>
                     <p class="card-text"><strong>Baki Kupon:</strong> 2 Kupon</p>
@@ -194,7 +193,7 @@
         <div class="col-12 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-info text-uppercase">Transaksi Terbaru</h5>
+                    <h5 class="card-title text-uppercase">Transaksi Terbaru</h5>
                     <hr />
                     <table class="table table-sm">
                         <thead>
@@ -232,10 +231,10 @@
     @role('Peniaga')
     <!-- Dashboard Peniaga -->
     <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-12 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-info text-uppercase">Transaksi Kupon</h5>
+                    <h5 class="card-title text-uppercase">Transaksi Kupon</h5>
                     <hr />
                     <p class="card-text"><strong>Jumlah Transaksi Hari Ini:</strong> RM 300.00</p>
                     <p class="card-text"><strong>Jumlah Kupon Dituntut:</strong> 15 Kupon</p>
@@ -245,23 +244,11 @@
             </div>
         </div>
 
-        <div class="col-md-6 mb-3">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title text-danger text-uppercase">Status Pembayaran</h5>
-                    <hr />
-                    <p class="card-text"><strong>Jumlah Bayaran Tertunggak:</strong> RM 1,200.00</p>
-                    <p class="card-text"><strong>Jumlah Bayaran Bulan Ini:</strong> RM 2,500.00</p>
-                    <a href="{{ route('transaksi') }}" class="btn btn-danger btn-sm">Semak Status Bayaran</a>
-                </div>
-            </div>
-        </div>
-
         <!-- Latest Transactions -->
         <div class="col-12 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title text-info text-uppercase">Transaksi Terbaru</h5>
+                    <h5 class="card-title text-uppercase">Transaksi Terbaru</h5>
                     <hr />
                     <table class="table table-sm">
                         <thead>
@@ -277,13 +264,13 @@
                                 <td>17-12-2024</td>
                                 <td>John Doe</td>
                                 <td>RM 10.00</td>
-                                <td>Telah Dituntut</td>
+                                <td>Belum Dituntut</td>
                             </tr>
                             <tr>
                                 <td>16-12-2024</td>
                                 <td>Alice Tan</td>
                                 <td>RM 15.00</td>
-                                <td>Dituntut</td>
+                                <td>Belum Dituntut</td>
                             </tr>
                         </tbody>
                     </table>
