@@ -116,7 +116,7 @@
     <!-- Additional Cards -->
     <div class="row">
         <!-- Kad Agihan Zakat Terkini -->
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title text-primary text-uppercase">Agihan Zakat Terkini</h5>
@@ -130,7 +130,7 @@
         </div>
 
         <!-- Kad Pengurusan Vendor -->
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title text-primary text-uppercase">Pengurusan Peniaga</h5>
@@ -144,7 +144,7 @@
         </div>
 
         <!-- Kad Pengurusan Pelajar -->
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title text-primary text-uppercase">Pengurusan Pelajar</h5>
