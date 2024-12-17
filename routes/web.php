@@ -51,12 +51,19 @@ Route::middleware('auth')->group(function () {
     Route::get('dana-zakat/show', function () { return view('pages.dana-zakat.show');})->name('dana-zakat.show');
     Route::get('dana-zakat/trash', function () { return view('pages.dana-zakat.trash');})->name('dana-zakat.trash');
 
-    // Transaction Management
-    Route::get('transaction', function () { return view('pages.transaction.index');})->name('transaction');
-    Route::get('transaction/create', function () { return view('pages.transaction.create');})->name('transaction.create');
-    Route::get('transaction/edit', function () { return view('pages.transaction.edit');})->name('transaction.edit');
-    Route::get('transaction/show', function () { return view('pages.transaction.show');})->name('transaction.show');
-    Route::get('transaction/trash', function () { return view('pages.transaction.trash');})->name('transaction.trash');
+    // Zakat Management
+    Route::get('kupon-zakat', function () { return view('pages.kupon-zakat.index');})->name('kupon-zakat');
+    Route::get('kupon-zakat/create', function () { return view('pages.kupon-zakat.create');})->name('kupon-zakat.create');
+    Route::get('kupon-zakat/edit', function () { return view('pages.kupon-zakat.edit');})->name('kupon-zakat.edit');
+    Route::get('kupon-zakat/show', function () { return view('pages.kupon-zakat.show');})->name('kupon-zakat.show');
+    Route::get('kupon-zakat/trash', function () { return view('pages.kupon-zakat.trash');})->name('kupon-zakat.trash');
+
+    // transaksi Management
+    Route::get('transaksi', function () { return view('pages.transaksi.index');})->name('transaksi');
+    Route::get('transaksi/claim', function () { return view('pages.transaksi.claim');})->name('transaksi.claim');
+    Route::get('transaksi/edit', function () { return view('pages.transaksi.edit');})->name('transaksi.edit');
+    Route::get('transaksi/show', function () { return view('pages.transaksi.show');})->name('transaksi.show');
+    Route::get('transaksi/trash', function () { return view('pages.transaksi.trash');})->name('transaksi.trash');
 
     //Campus
     Route::get('campus', 'CampusController@index')->name('campus');

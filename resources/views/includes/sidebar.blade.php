@@ -63,8 +63,15 @@
         </a>
     </li>
 
-    <li class="{{ Request::is('transaction*') ? 'mm-active' : '' }}">
-        <a href="{{ route('transaction') }}">
+    <li class="{{ Request::is('kupon-zakat*') ? 'mm-active' : '' }}">
+        <a href="{{ route('kupon-zakat') }}">
+            <div class="parent-icon"><i class='bx bx-gift'></i></div>
+            <div class="menu-title">Kupon Zakat</div>
+        </a>
+    </li>
+
+    <li class="{{ Request::is('transaksi*') ? 'mm-active' : '' }}">
+        <a href="{{ route('transaksi') }}">
             <div class="parent-icon"><i class='bx bx-wallet' ></i></div>
             <div class="menu-title">Transaksi</div>
         </a>

@@ -2,47 +2,51 @@
 @section('content')
 <!--breadcrumb-->
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Peniaga</div>
+    <div class="breadcrumb-title pe-3">Pengurusan Kupon Zakat</div>
     <div class="ps-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a>
                 </li>
-                <li class="breadcrumb-item"><a href="{{ route('peniaga') }}"></i>Senarai Peniaga</a>
+                <li class="breadcrumb-item"><a href="{{ route('kupon-zakat') }}"></i>Senarai Kupon Zakat</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Senarai Peniaga Dipadam</li>
+                <li class="breadcrumb-item active" aria-current="page">Senarai Kupon Zakat Dipadam</li>
             </ol>
         </nav>
     </div>
 </div>
 <!--end breadcrumb-->
-<h6 class="mb-0 text-uppercase">Senarai Peniaga Dipadam</h6>
+<h6 class="mb-0 text-uppercase">Senarai Kupon Zakat Dipadam</h6>
 <hr />
 <div class="card">
     <div class="card-body">
         <div class="table-responsive">
             <table class="table">
-                <thead>
+            <thead>
                     <tr>
-                        <th>Nama</th>
-                        <th>No. Pekerja</th>
-                        <th>Alamat Emel</th>
-                        <th>Jawatan</th>
-                        <th>Kampus</th>
-                        <th>Peranan</th>
+                        <th>#</th>
+                        <th>Tarikh Agihan</th>
+                        <th>Jumlah Dana Zakat (RM)</th>
+                        <th>Jumlah Pelajar</th>
+                        <th>Nilai Kupon (RM)</th>
+                        <th>Jumlah Agihan Kupon (RM)</th>
+                        <th>Baki Dana (RM)</th>
+                        <th>Tarikh Luput</th>
                         <th>Tindakan</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Ali Bin Aby</td>
-                        <td>2022125869</td>
-                        <td>Samarahan</td>
-                        <td>Semester 2/2024</td>
-                        <td>Aktif</td>
+                        <td>17-12-2024</td>
+                        <td>10000.00</td>
+                        <td>120</td>
+                        <td>10.00</td>
+                        <td>1200.00</td>
+                        <td>8800.00</td>
+                        <td>01-12-2024</td>
                         <td>
-                            <a href="{{ route('peniaga') }}" class="btn btn-success btn-sm"
+                            <a href="{{ route('kupon-zakat') }}" class="btn btn-success btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kembalikan">
                                 <i class="bx bx-undo"></i>
                             </a>
@@ -99,7 +103,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                 <form class="d-inline" method="POST" action="">
-                    <a href="{{ route('peniaga') }}" class="btn btn-danger">Padam</a>
+                    <a href="{{ route('kupon-zakat') }}" class="btn btn-danger">Padam</a>
                 </form>
             </div>
         </div>
