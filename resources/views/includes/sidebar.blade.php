@@ -18,21 +18,26 @@
         </a>
     </li>
 
+    @role('Superadmin')
     <li class="{{ Request::routeIs('activity-log') ? 'mm-active' : '' }}">
         <a href="{{ route('activity-log') }}">
             <div class="parent-icon"><i class='bx bx-history'></i></div>
             <div class="menu-title">Log Aktiviti</div>
         </a>
     </li>
+    @endrole
 
+    @hasanyrole('Superadmin|Admin')
     <li class="menu-label">Pengurusan Pengguna</li>
 
+    @role('Superadmin')
     <li class="{{ Request::is('user*') && !Request::is('user-role*') ? 'mm-active' : '' }}">
         <a href="{{ route('user') }}">
             <div class="parent-icon"><i class='bx bx-user-circle'></i></div>
             <div class="menu-title">Pengguna</div>
         </a>
     </li>
+    @endrole
 
     <li class="{{ Request::is('student*') ? 'mm-active' : '' }}">
         <a href="{{ route('student') }}">
@@ -47,15 +52,21 @@
             <div class="menu-title">Peniaga</div>
         </a>
     </li>
+    @endhasanyrole
 
+    @role('Superadmin')
     <li class="{{ Request::is('user-role*') ? 'mm-active' : '' }}">
         <a href="{{ route('user-role') }}">
             <div class="parent-icon"><i class='bx bx-shield'></i></div>
             <div class="menu-title">Peranan Pengguna</div>
         </a>
     </li>
+    @endrole
+
 
     <li class="menu-label">Pengurusan Zakat</li>
+
+    @hasanyrole('Superadmin|Admin')
     <li class="{{ Request::is('dana-zakat*') ? 'mm-active' : '' }}">
         <a href="{{ route('dana-zakat') }}">
             <div class="parent-icon"><i class='bx bx-donate-heart'></i></div>
@@ -69,14 +80,16 @@
             <div class="menu-title">Agihan Kupon</div>
         </a>
     </li>
+    @endhasanyrole
 
     <li class="{{ Request::is('transaksi*') ? 'mm-active' : '' }}">
         <a href="{{ route('transaksi') }}">
-            <div class="parent-icon"><i class='bx bx-wallet' ></i></div>
+            <div class="parent-icon"><i class='bx bx-wallet'></i></div>
             <div class="menu-title">Transaksi</div>
         </a>
     </li>
 
+    @hasanyrole('Superadmin|Admin')
     <li class="menu-label">Tetapan</li>
 
     <li class="{{ Request::is('campus*') ? 'mm-active' : '' }}">
@@ -102,12 +115,15 @@
             </li>
         </ul>
     </li>
+    @endhasanyrole
 
+    @role('Superadmin')
     <li class="{{ Request::routeIs('logs.debug') ? 'mm-active' : '' }}">
         <a href="{{ route('logs.debug') }}">
             <div class="parent-icon"><i class='bx bxs-bug'></i></div>
             <div class="menu-title">Debug Log</div>
         </a>
     </li>
+    @endrole
 </ul>
 <!--end navigation-->
