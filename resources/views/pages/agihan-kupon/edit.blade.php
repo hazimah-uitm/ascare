@@ -3,20 +3,20 @@
 @section('content')
 <!-- Breadcrumb -->
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Kupon Zakat</div>
+    <div class="breadcrumb-title pe-3">Pengurusan Agihan Kupon</div>
     <div class="ps-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
-                <li class="breadcrumb-item"><a href="{{ route('kupon-zakat') }}">Senarai Kupon Zakat</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tambah Kupon Zakat</li>
+                <li class="breadcrumb-item"><a href="{{ route('agihan-kupon') }}">Senarai Agihan Kupon</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit Agihan Kupon</li>
             </ol>
         </nav>
     </div>
 </div>
 <!-- End Breadcrumb -->
 
-<h6 class="mb-0 text-uppercase">Tambah Kupon Zakat</h6>
+<h6 class="mb-0 text-uppercase">Edit Agihan Kupon</h6>
 <hr />
 
 <div class="card">
@@ -34,25 +34,25 @@
 
             <div class="mb-3">
                 <label for="nilai_kupon" class="form-label">Nilai Kupon (RM)</label>
-                <input type="number" class="form-control" id="nilai_kupon" name="nilai_kupon" required>
+                <input type="number" class="form-control" id="nilai_kupon" name="nilai_kupon" value="10.00" required>
             </div>
 
             <div class="mb-3">
                 <label for="jumlah_agihan" class="form-label">Jumlah Agihan Kupon (RM)</label>
-                <input type="number" class="form-control" id="jumlah_agihan" name="jumlah_agihan" readonly>
+                <input type="number" class="form-control" id="jumlah_agihan" name="jumlah_agihan" value="1200.00" readonly>
             </div>
 
             <div class="mb-3">
                 <label for="baki_dana" class="form-label">Baki Dana (RM)</label>
-                <input type="number" class="form-control" id="baki_dana" name="baki_dana" readonly>
+                <input type="number" class="form-control" id="baki_dana" name="baki_dana" value="8800.00" readonly>
             </div>
 
             <div class="mb-3">
                 <label for="tarikh_luput" class="form-label">Tarikh Luput</label>
-                <input type="date" class="form-control" id="tarikh_luput" name="tarikh_luput" required>
+                <input type="date" class="form-control" id="tarikh_luput" name="tarikh_luput" value="01-12-2024" required>
             </div>
 
-            <a href="{{ route('kupon-zakat') }}" class="btn btn-primary">Simpan Agihan</a>
+            <a href="{{ route('agihan-kupon') }}" class="btn btn-primary">Kemaskini</a>
         </form>
     </div>
 </div>

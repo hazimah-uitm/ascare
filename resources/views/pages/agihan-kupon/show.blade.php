@@ -3,20 +3,20 @@
 @section('content')
 <!-- Breadcrumb -->
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Kupon Zakat</div>
+    <div class="breadcrumb-title pe-3">Pengurusan Agihan Kupon</div>
     <div class="ps-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
-                <li class="breadcrumb-item"><a href="{{ route('kupon-zakat') }}">Senarai Kupon Zakat</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Lihat Kupon Zakat</li>
+                <li class="breadcrumb-item"><a href="{{ route('agihan-kupon') }}">Senarai Agihan Kupon</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Lihat Agihan Kupon</li>
             </ol>
         </nav>
     </div>
 </div>
 <!-- End Breadcrumb -->
 
-<h6 class="mb-0 text-uppercase">Lihat Kupon Zakat</h6>
+<h6 class="mb-0 text-uppercase">Lihat Agihan Kupon</h6>
 <hr />
 
 <!-- First Info Card with Coupon Distribution Details -->

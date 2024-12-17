@@ -70,7 +70,7 @@
                         <td>Belum Diguna</td>
                         <td>
                             <a href="{{ route('transaksi.claim') }}" class="btn btn-success btn-sm"
-                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Claim Kupon Zakat">
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Claim Kupon">
                                 <i class="bx bx-gift"></i> Claim Kupon
                             </a>
                             <a href="{{ route('transaksi.show')}}" class="btn btn-primary btn-sm"

@@ -63,10 +63,10 @@
         </a>
     </li>
 
-    <li class="{{ Request::is('kupon-zakat*') ? 'mm-active' : '' }}">
-        <a href="{{ route('kupon-zakat') }}">
+    <li class="{{ Request::is('agihan-kupon*') ? 'mm-active' : '' }}">
+        <a href="{{ route('agihan-kupon') }}">
             <div class="parent-icon"><i class='bx bx-gift'></i></div>
-            <div class="menu-title">Kupon Zakat</div>
+            <div class="menu-title">Agihan Kupon</div>
         </a>
     </li>
 

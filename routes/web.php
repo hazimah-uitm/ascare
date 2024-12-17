@@ -52,11 +52,11 @@ Route::middleware('auth')->group(function () {
     Route::get('dana-zakat/trash', function () { return view('pages.dana-zakat.trash');})->name('dana-zakat.trash');
 
     // Zakat Management
-    Route::get('kupon-zakat', function () { return view('pages.kupon-zakat.index');})->name('kupon-zakat');
-    Route::get('kupon-zakat/create', function () { return view('pages.kupon-zakat.create');})->name('kupon-zakat.create');
-    Route::get('kupon-zakat/edit', function () { return view('pages.kupon-zakat.edit');})->name('kupon-zakat.edit');
-    Route::get('kupon-zakat/show', function () { return view('pages.kupon-zakat.show');})->name('kupon-zakat.show');
-    Route::get('kupon-zakat/trash', function () { return view('pages.kupon-zakat.trash');})->name('kupon-zakat.trash');
+    Route::get('agihan-kupon', function () { return view('pages.agihan-kupon.index');})->name('agihan-kupon');
+    Route::get('agihan-kupon/create', function () { return view('pages.agihan-kupon.create');})->name('agihan-kupon.create');
+    Route::get('agihan-kupon/edit', function () { return view('pages.agihan-kupon.edit');})->name('agihan-kupon.edit');
+    Route::get('agihan-kupon/show', function () { return view('pages.agihan-kupon.show');})->name('agihan-kupon.show');
+    Route::get('agihan-kupon/trash', function () { return view('pages.agihan-kupon.trash');})->name('agihan-kupon.trash');
 
     // transaksi Management
     Route::get('transaksi', function () { return view('pages.transaksi.index');})->name('transaksi');

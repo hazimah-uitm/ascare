@@ -9,14 +9,14 @@
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
                 <li class="breadcrumb-item"><a href="{{ route('transaksi') }}">Senarai Transaksi</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Guna Kupon Zakat</li>
+                <li class="breadcrumb-item active" aria-current="page">Guna Agihan Kupon</li>
             </ol>
         </nav>
     </div>
 </div>
 <!-- End Breadcrumb -->
 
-<h6 class="mb-0 text-uppercase">Guna Kupon Zakat</h6>
+<h6 class="mb-0 text-uppercase">Guna Agihan Kupon</h6>
 <hr />
 
 <div class="card">
@@ -24,7 +24,7 @@
         <form id="kuponForm" method="POST" action="#">
 
             <div class="mb-3">
-                <label for="nilai_kupon" class="form-label">Nilai Kupon Zakat (RM)</label>
+                <label for="nilai_kupon" class="form-label">Nilai Agihan Kupon (RM)</label>
                 <input type="text" class="form-control" id="nilai_kupon" name="nilai_kupon" value="10.00" readonly>
             </div>
 
@@ -53,7 +53,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="confirmModalLabel">Pengesahan Penggunaan Kupon Zakat</h5>
+                <h5 class="modal-title" id="confirmModalLabel">Pengesahan Penggunaan Agihan Kupon</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
