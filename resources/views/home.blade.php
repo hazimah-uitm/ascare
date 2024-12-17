@@ -119,12 +119,12 @@
         <div class="col-md-4 mb-3">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
-                    <h5 class="card-title text-primary">Agihan Zakat Terkini</h5>
+                    <h5 class="card-title text-primary text-uppercase">Agihan Zakat Terkini</h5>
                     <hr />
                     <p class="card-text"><strong>Agihan Terakhir:</strong> 17-12-2024</p>
                     <p class="card-text"><strong>Jumlah Agihan:</strong> RM 5,000.00</p>
                     <p class="card-text"><strong>Bilangan Penerima:</strong> 500 pelajar</p>
-                    <a href="#" class="btn btn-primary btn-sm">Papar Maklumat</a>
+                    <a href="{{ route('agihan-kupon') }}" class="btn btn-primary btn-sm">Papar Maklumat</a>
                 </div>
             </div>
         </div>
@@ -133,12 +133,12 @@
         <div class="col-md-4 mb-3">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
-                    <h5 class="card-title text-primary">Pengurusan Vendor</h5>
+                    <h5 class="card-title text-primary text-uppercase">Pengurusan Peniaga</h5>
                     <hr />
                     <p class="card-text"><strong>Jumlah Peniaga:</strong> 10</p>
                     <p class="card-text"><strong>Peniaga Belum Menuntut Bayaran:</strong> 8</p>
                     <p class="card-text"><strong>Jumlah Bayaran:</strong> RM 3,000.00</p>
-                    <a href="#" class="btn btn-primary btn-sm">Papar Maklumat</a>
+                    <a href="{{ route('peniaga') }}" class="btn btn-primary btn-sm">Papar Maklumat</a>
                 </div>
             </div>
         </div>
@@ -147,12 +147,12 @@
         <div class="col-md-4 mb-3">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
-                    <h5 class="card-title text-primary">Pengurusan Pelajar</h5>
+                    <h5 class="card-title text-primary text-uppercase">Pengurusan Pelajar</h5>
                     <hr />
                     <p class="card-text"><strong>Jumlah Pelajar:</strong> 120</p>
                     <p class="card-text"><strong>Pelajar Belum Menuntut Kupon:</strong> 10</p>
                     <p class="card-text"><strong>Jumlah Kupon Dituntut:</strong> RM 1,100.00</p>
-                    <a href="#" class="btn btn-primary btn-sm">Papar Maklumat</a>
+                    <a href="{{ route('student') }}" class="btn btn-primary btn-sm">Papar Maklumat</a>
                 </div>
             </div>
         </div>
