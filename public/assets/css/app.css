@@ -652,12 +652,12 @@ a {
 }
 
 .bg-login {
-	background-image: url(../images/login-images/b1.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed
+    background-image: url(../images/login-images/b1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .bg-login::before {
 	content: "";
