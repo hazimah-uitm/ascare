@@ -53,15 +53,8 @@
                                                         class='bx bx-hide'></i></a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" name="remember"
-                                                    id="flexSwitchCheckChecked" {{ old('remember') ? 'checked' : '' }}>
-                                                <label class="form-check-label" for="flexSwitchCheckChecked">Ingat
-                                                    saya</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 text-end">
+                                        <div class="col-12 text-end">
+                                            <a href="{{ route('register') }}">Daftar Akaun</a> |
                                             <a href="{{ route('password.request') }}">Lupa kata laluan?</a>
                                         </div>
                                         <div class="col-12">
