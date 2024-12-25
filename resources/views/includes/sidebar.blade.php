@@ -89,6 +89,13 @@
         </a>
     </li>
 
+    <li class="{{ Request::is('tuntutan-peniaga*') ? 'mm-active' : '' }}">
+        <a href="{{ route('tuntutan-peniaga') }}">
+            <div class="parent-icon"><i class='bx bx-money'></i></div>
+            <div class="menu-title">Tuntutan Peniaga</div>
+        </a>
+    </li>
+
     @hasanyrole('Superadmin|Admin')
     <li class="menu-label">Tetapan</li>
 

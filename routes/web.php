@@ -66,6 +66,13 @@ Route::middleware('auth')->group(function () {
     Route::get('transaksi/show', function () { return view('pages.transaksi.show');})->name('transaksi.show');
     Route::get('transaksi/trash', function () { return view('pages.transaksi.trash');})->name('transaksi.trash');
 
+    //Tuntutan Peniaga Management
+    Route::get('tuntutan-peniaga', function () { return view('pages.tuntutan-peniaga.index');})->name('tuntutan-peniaga');
+    Route::get('tuntutan-peniaga/create', function () { return view('pages.tuntutan-peniaga.create');})->name('tuntutan-peniaga.create');
+    Route::get('tuntutan-peniaga/edit', function () { return view('pages.tuntutan-peniaga.edit');})->name('tuntutan-peniaga.edit');
+    Route::get('tuntutan-peniaga/show', function () { return view('pages.tuntutan-peniaga.show');})->name('tuntutan-peniaga.show');
+    Route::get('tuntutan-peniaga/trash', function () { return view('pages.tuntutan-peniaga.trash');})->name('tuntutan-peniaga.trash');
+
     //Campus
     Route::get('campus', 'CampusController@index')->name('campus');
     Route::get('campus/view/{id}', 'CampusController@show')->name('campus.show');
