@@ -1,89 +1,85 @@
 @extends('layouts.master')
 
 @section('content')
-<!-- Breadcrumb -->
-<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Agihan Kupon</div>
-    <div class="ps-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 p-0">
-                <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
-                <li class="breadcrumb-item"><a href="{{ route('agihan-kupon') }}">Senarai Agihan Kupon</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tambah Agihan Kupon</li>
-            </ol>
-        </nav>
+    <!-- Breadcrumb -->
+    <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+        <div class="breadcrumb-title pe-3">Pengurusan Tuntutan Peniaga</div>
+        <div class="ps-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 p-0">
+                    <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('tuntutan-peniaga') }}">Senarai Tuntutan Peniaga</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tambah Tuntutan Peniaga</li>
+                </ol>
+            </nav>
+        </div>
     </div>
-</div>
-<!-- End Breadcrumb -->
+    <!-- End Breadcrumb -->
 
-<h6 class="mb-0 text-uppercase">Tambah Agihan Kupon</h6>
-<hr />
+    <h6 class="mb-0 text-uppercase">Tambah Tuntutan Peniaga</h6>
+    <hr />
 
-<div class="card">
-    <div class="card-body">
-        <form method="POST" action="#">
-            <div class="mb-3">
-                <label for="jumlah_dana" class="form-label">Jumlah Dana Keseluruhan Zakat (RM)</label>
-                <input type="number" class="form-control" id="jumlah_dana" name="jumlah_dana" value="10000.00" readonly>
-            </div>
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" action="#">
+                <div class="mb-3">
+                    <label for="premis" class="form-label">Premis</label>
+                    <input type="textr" class="form-control" id="premis" name="premis" value="Dulang Kampung"
+                        readonly>
+                </div>
 
-            <div class="mb-3">
-                <label for="jumlah_pelajar" class="form-label">Jumlah Pelajar Layak</label>
-                <input type="number" class="form-control" id="jumlah_pelajar" name="jumlah_pelajar" value="120" readonly>
-            </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="month" class="form-label">Bulan</label>
+                        <select class="form-select" id="month" name="month" required>
+                            <option value="">Pilih Bulan</option>
+                            <option value="1">Januari</option>
+                            <option value="2">Februari</option>
+                            <option value="3">Mac</option>
+                            <option value="4">April</option>
+                            <option value="5">Mei</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Julai</option>
+                            <option value="8">Ogos</option>
+                            <option value="9">September</option>
+                            <option value="10">Oktober</option>
+                            <option value="11">November</option>
+                            <option value="12">Disember</option>
+                        </select>
+                    </div>
 
-            <div class="mb-3">
-                <label for="nilai_kupon" class="form-label">Nilai Kupon (RM)</label>
-                <input type="number" class="form-control" id="nilai_kupon" name="nilai_kupon" required>
-            </div>
+                    <div class="col-md-6">
+                        <label for="year" class="form-label">Tahun</label>
+                        <select class="form-select" id="year" name="year" required>
+                            <option value="">Pilih Tahun</option>
+                            @for ($i = now()->year; $i >= now()->year - 10; $i--)
+                                <option value="{{ $i }}">{{ $i }}</option>
+                            @endfor
+                        </select>
+                    </div>
+                </div>
 
-            <div class="mb-3">
-                <label for="jumlah_agihan" class="form-label">Jumlah Agihan Kupon (RM)</label>
-                <input type="number" class="form-control" id="jumlah_agihan" name="jumlah_agihan" readonly>
-            </div>
+                <div class="mb-3">
+                    <label for="jumlah_pelajar" class="form-label">Jumlah Pelajar Layak</label>
+                    <input type="number" class="form-control" id="jumlah_pelajar" name="jumlah_pelajar" value="120"
+                        readonly>
+                </div>
 
-            <div class="mb-3">
-                <label for="baki_dana" class="form-label">Baki Dana (RM)</label>
-                <input type="number" class="form-control" id="baki_dana" name="baki_dana" readonly>
-            </div>
+                <div class="mb-3">
+                    <label for="nilai_kupon" class="form-label">Nilai Kupon (RM)</label>
+                    <input type="number" class="form-control" id="nilai_kupon" name="nilai_kupon" value="10.00" readonly>
+                </div>
 
-            <div class="mb-3">
-                <label for="tarikh_luput" class="form-label">Tarikh Luput</label>
-                <input type="date" class="form-control" id="tarikh_luput" name="tarikh_luput" required>
-            </div>
+                <div class="mb-3">
+                    <label for="jumlah_tuntutan" class="form-label">Jumlah Tuntutan Peniaga (RM)</label>
+                    <input type="number" class="form-control" id="jumlah_tuntutan" name="jumlah_tuntutan" value="1200.00"
+                        readonly>
+                </div>
 
-            <a href="{{ route('agihan-kupon') }}" class="btn btn-primary">Simpan Agihan</a>
-        </form>
+                <a href="{{ route('tuntutan-peniaga') }}" class="btn btn-primary">Hantar</a>
+            </form>
+        </div>
     </div>
-</div>
 
-<!-- End Page Wrapper -->
-
-<script>
-    const nilaiKuponInput = document.getElementById('nilai_kupon');
-    const jumlahPelajarInput = document.getElementById('jumlah_pelajar');
-    const jumlahDanaInput = document.getElementById('jumlah_dana');
-    const jumlahAgihanInput = document.getElementById('jumlah_agihan');
-    const bakiDanaInput = document.getElementById('baki_dana');
-
-    nilaiKuponInput.addEventListener('input', function() {
-        const nilaiKupon = parseFloat(nilaiKuponInput.value) || 0;
-        const jumlahPelajar = parseFloat(jumlahPelajarInput.value) || 0;
-        const jumlahDana = parseFloat(jumlahDanaInput.value) || 0;
-
-        const jumlahAgihan = nilaiKupon * jumlahPelajar;
-        jumlahAgihanInput.value = jumlahAgihan.toFixed(2);
-
-        const bakiDana = jumlahDana - jumlahAgihan;
-        bakiDanaInput.value = bakiDana.toFixed(2);
-
-        if (jumlahAgihan > jumlahDana) {
-            jumlahAgihanInput.classList.add('is-invalid');
-            bakiDanaInput.classList.add('is-invalid');
-        } else {
-            jumlahAgihanInput.classList.remove('is-invalid');
-            bakiDanaInput.classList.remove('is-invalid');
-        }
-    });
-</script>
+    <!-- End Page Wrapper -->
 @endsection

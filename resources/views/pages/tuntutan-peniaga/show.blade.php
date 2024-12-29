@@ -36,6 +36,14 @@
                             <td>17-12-2024</td>
                         </tr>
                         <tr>
+                            <th>Bulan</th>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <th>Tahun</th>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
                             <th>Jumlah Pelajar</th>
                             <td>120</td>
                         </tr>
@@ -92,7 +100,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4" class="text-end"><strong>Total Jumlah (RM):</strong></td>
+                                <td colspan="4" class="text-end"><strong>Jumlah Keseluruhan (RM):</strong></td>
                                 <td class="text-end">
                                     <strong>
                                         27.00

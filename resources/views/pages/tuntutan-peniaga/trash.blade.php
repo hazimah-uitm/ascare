@@ -2,21 +2,21 @@
 @section('content')
 <!--breadcrumb-->
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-    <div class="breadcrumb-title pe-3">Pengurusan Agihan Kupon</div>
+    <div class="breadcrumb-title pe-3">Pengurusan Tuntutan Peniaga</div>
     <div class="ps-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="bx bx-home-alt"></i></a>
                 </li>
-                <li class="breadcrumb-item"><a href="{{ route('agihan-kupon') }}"></i>Senarai Agihan Kupon</a>
+                <li class="breadcrumb-item"><a href="{{ route('tuntutan-peniaga') }}"></i>Senarai Tuntutan Peniaga</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Senarai Agihan Kupon Dipadam</li>
+                <li class="breadcrumb-item active" aria-current="page">Senarai Tuntutan Peniaga Dipadam</li>
             </ol>
         </nav>
     </div>
 </div>
 <!--end breadcrumb-->
-<h6 class="mb-0 text-uppercase">Senarai Agihan Kupon Dipadam</h6>
+<h6 class="mb-0 text-uppercase">Senarai Tuntutan Peniaga Dipadam</h6>
 <hr />
 <div class="card">
     <div class="card-body">
@@ -24,29 +24,27 @@
             <table class="table">
             <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Tarikh Agihan</th>
-                        <th>Jumlah Dana Zakat (RM)</th>
-                        <th>Jumlah Pelajar</th>
-                        <th>Nilai Kupon (RM)</th>
-                        <th>Jumlah Agihan Kupon (RM)</th>
-                        <th>Baki Dana (RM)</th>
-                        <th>Tarikh Luput</th>
-                        <th>Tindakan</th>
-                    </tr>
+                            <th>#</th>
+                            <th>Premis</th>
+                            <th>Bulan</th>
+                            <th>Tahun</th>
+                            <th>Jumlah Pelajar</th>
+                            <th>Jumlah Tuntutan (RM)</th>
+                            <th>Status</th>
+                            <th>Tindakan</th>
+                        </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>17-12-2024</td>
-                        <td>10000.00</td>
-                        <td>120</td>
-                        <td>10.00</td>
-                        <td>1200.00</td>
-                        <td>8800.00</td>
-                        <td>01-12-2024</td>
+                         <td>1</td>
+                            <td>Dulang Kampung</td>
+                            <td>12</td>
+                            <td>2024</td>
+                            <td>120</td>
+                            <td>1200.00</td>
+                            <td>Sedang Diproses</td>
                         <td>
-                            <a href="{{ route('agihan-kupon') }}" class="btn btn-success btn-sm"
+                            <a href="{{ route('tuntutan-peniaga') }}" class="btn btn-success btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kembalikan">
                                 <i class="bx bx-undo"></i>
                             </a>
@@ -103,7 +101,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                 <form class="d-inline" method="POST" action="">
-                    <a href="{{ route('agihan-kupon') }}" class="btn btn-danger">Padam</a>
+                    <a href="{{ route('tuntutan-peniaga') }}" class="btn btn-danger">Padam</a>
                 </form>
             </div>
         </div>
