@@ -53,12 +53,12 @@
                     <tr>
                         <th>#</th>
                         <th>Tarikh Agihan</th>
-                        <th>Jumlah Dana Zakat (RM)</th>
                         <th>Jumlah Pelajar</th>
-                        <th>Nilai Kupon (RM)</th>
-                        <th>Jumlah Agihan Kupon (RM)</th>
-                        <th>Baki Dana (RM)</th>
                         <th>Tarikh Luput</th>
+                        <th class="text-end">Jumlah Dana Zakat (RM)</th>
+                        <th class="text-end">Nilai Kupon (RM)</th>
+                        <th class="text-end">Jumlah Agihan Kupon (RM)</th>
+                        <th class="text-end">Baki Dana (RM)</th>
                         <th>Tindakan</th>
                     </tr>
                 </thead>
@@ -66,12 +66,12 @@
                     <tr>
                         <td>1</td>
                         <td>17-12-2024</td>
-                        <td>10000.00</td>
                         <td>120</td>
-                        <td>10.00</td>
-                        <td>1200.00</td>
-                        <td>8800.00</td>
                         <td>01-12-2025</td>
+                        <td class="text-end">10000.00</td>
+                        <td class="text-end">10.00</td>
+                        <td class="text-end">1200.00</td>
+                        <td class="text-end">8800.00</td>
                         <td>
                             <a href="{{ route('agihan-kupon.edit') }}" class="btn btn-info btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kemaskini">
@@ -90,6 +90,16 @@
                         </td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-end fw-bold">Jumlah Keseluruhan (RM):</td>
+                        <td class="text-end fw-bold">10000.00</td>
+                        <td class="text-end fw-bold">10.00</td>
+                        <td class="text-end fw-bold">1200.00</td>
+                        <td class="text-end fw-bold">8800.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
         <div class="mt-3 d-flex justify-content-between">

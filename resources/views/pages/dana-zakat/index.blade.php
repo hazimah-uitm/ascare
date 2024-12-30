@@ -53,9 +53,9 @@
                     <tr>
                         <th>#</th>
                         <th>Sumber</th>
-                        <th>Jumlah Dana</th>
                         <th>Tarikh Dana Diterima</th>
                         <th>Status</th>
+                        <th class="text-end">Jumlah Dana (RM)</th>
                         <th>Tindakan</th>
                     </tr>
                 </thead>
@@ -63,9 +63,9 @@
                     <tr>
                         <td>1</td>
                         <td>Yayasan Sarawak</td>
-                        <td>RM 10,000</td>
                         <td>01-01-2024</td>
                         <td>Aktif</td>
+                        <td class="text-end">10,000.00</td>
                         <td>
                             <a href="{{ route('dana-zakat.edit') }}" class="btn btn-info btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kemaskini">
@@ -86,9 +86,9 @@
                     <tr>
                         <td>2</td>
                         <td>Tabung Baitulmal Sarawak</td>
-                        <td>RM 5,000</td>
                         <td>15-02-2024</td>
                         <td>Aktif</td>
+                        <td class="text-end">5,000.00</td>
                         <td>
                             <a href="{{ route('dana-zakat.edit') }}" class="btn btn-info btn-sm"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kemaskini">
@@ -107,6 +107,13 @@
                         </td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-end fw-bold">Jumlah Keseluruhan Dana:</td>
+                        <td class="text-end fw-bold">15,000.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
         <div class="mt-3 d-flex justify-content-between">
